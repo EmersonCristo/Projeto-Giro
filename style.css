@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'emblema';
+    src: url('Fonts/THE_JACATRA.otf')format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'secundaria';
+    src: url('Fonts/Grafite.otf')format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #16232E;
+    --cor1: #CC8D1A;
+    --cor2: #BDA523;
+
+    --fonte-destaque: 'emblema', cursive;
+    --fonte-secundaria: 'secundaria', cursive;
+    --fonte-normal: arial, verdana, helvetica, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(to bottom, var(--cor0), black, var(--cor1));
+}
+
+.cabeçalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: linear-gradient(to top, black, var(--cor0), rgb(116, 78, 9));
+}
+
+nav {
+    padding: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+    background-color: black;
+    gap: 50px;
+}
+
+nav :hover {
+    background-color: var(--cor1);
+    color: black;
+    border-radius: 7px;
+    text-decoration: underline;
+}
+
+.link {
+    font-family: 'secundaria';
+    color: var(--cor1);
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.emblema {
+    font-family: 'emblema', cursive, sans-serif;
+    color: var(--cor1);
+    font-size: 70px;
+}
+
+main {
+    width: 1000px;
+    margin: auto;
+    background-color: var(--cor0);
+    border-radius: 20px;
+    color: white;
+}
+
+h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    background-color:  var(--cor0);
+    font-family: var(--fonte-secundaria);
+    font-size: 50px;
+    color: var(--cor1);
+}
+
+.imagem-principal {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0px 30px 350px;
+}
+
+.studio {
+    background-color: rgba(132, 132, 132, 0.354);
+}
+
+.imagem-studio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-left: 200px;
+    width: 600px;
+}
+
+
